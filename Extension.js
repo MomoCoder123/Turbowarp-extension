@@ -10,7 +10,7 @@ class HelloWorld {
           text: '𝝿!'
         },
         {
-          opcode: "alert",
+          opcode: "ale",
           blockType: Scratch.BlockType.COMMAND,
           text: "alert[TEXT]",
           arguments: {
@@ -26,6 +26,10 @@ class HelloWorld {
 
   pi() {
     return 3.141592653589793238;
+  }
+  
+  ale(args){
+    alert(args.TEXT)
   }
 }
 
