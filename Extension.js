@@ -5,16 +5,27 @@ class HelloWorld {
       name: 'It works!',
       blocks: [
         {
-          opcode: 'hello',
+          opcode: 'pi',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'Hello!'
+          text: '𝝿!'
+        },
+        {
+          opcode: "alert",
+          blockType: Scratch.BlockType.COMMAND,
+          text: "alert[TEXT]",
+          arguments: {
+            TEXT: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: "hello world!"
+            }
+          }
         }
       ]
     };
   }
 
-  hello() {
-    return 'World!';
+  pi() {
+    return 3.141592653589793238;
   }
 }
 
